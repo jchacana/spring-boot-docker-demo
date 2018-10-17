@@ -22,7 +22,7 @@
 
   <properties>
     <java.version>1.8</java.version>
-    <docker.image.prefix>mitrais</docker.image.prefix>
+    <docker.image.prefix>jchacana</docker.image.prefix>
   </properties>
 
   <build>
@@ -44,6 +44,7 @@
         <version>1.3.6</version>
         <configuration>
           <repository>${docker.image.prefix}/${project.artifactId}</repository>
+          <tag>${version}</tag>
           <buildArgs>
             <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
           </buildArgs>
